@@ -296,17 +296,17 @@ window.addEventListener('scroll', () => {
 
 /* ── DEMO MODAL ────────────────────────────────────────── */
 const demoVideos = {
-  'bookworn':                'videos/bookworn-demo.mp4',
-  'ride-x':                  'videos/ridex-demo.mp4',
-  'crypto-prediction':       'videos/crypto-demo.mp4',
-  'image-super-resolution':  'videos/superres-demo.mp4'
+  'bookworn':                          'videos/bookworn-demo.mp4',
+  'ride-x':                            'videos/ridex-demo.mp4',
+  'train-scheduler-route-optimizer':   'videos/train-scheduler-demo.mp4',
+  'crypto-prediction':                 'videos/crypto-demo.mp4'
 };
 
 const demoTitles = {
-  'bookworn':                'Bookworn — Live Demo',
-  'ride-x':                  'RIDE X — Live Demo',
-  'crypto-prediction':       'Crypto-prediction — Live Demo',
-  'image-super-resolution':  'Image Super-Resolution — Live Demo'
+  'bookworn':                          'Bookworn — Live Demo',
+  'ride-x':                            'RIDE X — Live Demo',
+  'train-scheduler-route-optimizer':   'Train Scheduler & Route Optimizer — Live Demo',
+  'crypto-prediction':                 'Crypto-prediction — Live Demo'
 };
 
 function openDemoModal(projectKey) {
