@@ -293,3 +293,49 @@ window.addEventListener('scroll', () => {
     a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--accent)' : '';
   });
 });
+
+/* ── DEMO MODAL ────────────────────────────────────────── */
+const demoVideos = {
+  'bookworn':                'videos/bookworn-demo.mp4',
+  'ride-x':                  'videos/ridex-demo.mp4',
+  'crypto-prediction':       'videos/crypto-demo.mp4',
+  'image-super-resolution':  'videos/superres-demo.mp4'
+};
+
+const demoTitles = {
+  'bookworn':                'Bookworn — Live Demo',
+  'ride-x':                  'RIDE X — Live Demo',
+  'crypto-prediction':       'Crypto-prediction — Live Demo',
+  'image-super-resolution':  'Image Super-Resolution — Live Demo'
+};
+
+function openDemoModal(projectKey) {
+  const modal = document.getElementById('demoModal');
+  const video = document.getElementById('demoVideo');
+  const title = document.getElementById('demoModalTitle');
+
+  title.textContent = demoTitles[projectKey] || 'Project Demo';
+  video.src = demoVideos[projectKey] || '';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  video.play().catch(() => {});
+}
+
+function closeDemoModal() {
+  const modal = document.getElementById('demoModal');
+  const video = document.getElementById('demoVideo');
+  video.pause();
+  video.src = '';
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close on overlay click
+document.getElementById('demoModal')?.addEventListener('click', function(e) {
+  if (e.target === this) closeDemoModal();
+});
+
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDemoModal();
+});

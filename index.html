@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
   <!-- Star / network background: visual-only background layer -->
@@ -163,7 +164,10 @@
               <h3>Bookworn</h3>
               <p>AI-powered book recommendation website using React.js and IBM Watson Assistant, with personalized recommendations based on mood, genre and reading preferences.</p>
               <div class="carousel-project-tags"><span>React.js</span><span>Python</span><span>IBM Watson</span></div>
-              <a href="https://github.com/RANAV2004/Bookworn" target="_blank" class="carousel-project-link">VIEW ON GITHUB →</a>
+              <div class="carousel-project-links">
+                <a href="https://github.com/RANAV2004/Bookworn" target="_blank" class="carousel-project-link">VIEW ON GITHUB →</a>
+                <button class="carousel-project-link demo-btn" onclick="openDemoModal('bookworn')">LIVE DEMO →</button>
+              </div>
             </article>
 
             <article class="carousel-project-card active">
@@ -172,22 +176,25 @@
               <h3>RIDE X</h3>
               <p>Computer Vision and Deep Learning project designed to detect traffic signs, driver drowsiness, lane changes and pedestrian movements.</p>
               <div class="carousel-project-tags"><span>Python</span><span>Computer Vision</span><span>Deep Learning</span></div>
+              <button class="carousel-project-link demo-btn" onclick="openDemoModal('ride-x')">LIVE DEMO →</button>
             </article>
 
             <article class="carousel-project-card">
               <div class="carousel-project-number">003</div>
               <div class="carousel-project-icon cyan">⌁</div>
-              <h3>Crypto-prediction</h3>
-              <p>Machine Learning based system for analysing traffic data and detecting network intrusions with a hybrid intrusion detection and firewall approach.</p>
+              <h3>Train Scheduler& Route Optimizer</h3>
+              <p></p>Full-stack booking app with role-based JWT auth, email-OTP verification & password reset, Dijkstra route optimization with data visualizations, and CSV export; deployed on Render.</p>
               <div class="carousel-project-tags"><span>Machine Learning</span><span>Cyber Security</span><span>Python</span></div>
+              <button class="carousel-project-link demo-btn" onclick="openDemoModal('train-scheduler-route-optimizer')">LIVE DEMO →</button>
             </article>
 
             <article class="carousel-project-card">
               <div class="carousel-project-number">004</div>
               <div class="carousel-project-icon green">◈</div>
-              <h3>Image Super-Resolution</h3>
-              <p>Generating photo-realistic super-resolution images from low-resolution inputs using SRGAN and deep learning techniques.</p>
+              <h3>Crypto-prediction</h3>
+              <p>Machine Learning based system for analysing traffic data and detecting network intrusions with a hybrid intrusion detection and firewall approach.</p>
               <div class="carousel-project-tags"><span>SRGAN</span><span>Deep Learning</span><span>Computer Vision</span></div>
+              <button class="carousel-project-link demo-btn" onclick="openDemoModal('crypto-prediction')">LIVE DEMO →</button>
             </article>
           </div>
         </div>
@@ -487,6 +494,20 @@
       <a href="#contact">Contact</a>
     </div>
   </footer>
+  <!-- Demo Modal -->
+  <div class="demo-modal-overlay" id="demoModal">
+    <button class="demo-modal-close" onclick="closeDemoModal()" aria-label="Close demo">&times;</button>
+    <div class="demo-modal">
+      <div class="demo-modal-icon"></div>
+      <h3 class="demo-modal-title" id="demoModalTitle">Project Demo</h3>
+      <div class="demo-modal-frame">
+        <video id="demoVideo" controls playsinline>
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
   <script src="style.js" defer></script>
 </body>
 </html>
