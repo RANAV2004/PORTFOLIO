@@ -298,7 +298,7 @@ window.addEventListener('scroll', () => {
 const demoVideos = {
   'bookworn':                          'videos/bookworn-demo.mp4',
   'ride-x':                            'videos/ridex-demo.mp4',
-  'train-scheduler-route-optimizer':   'videos/train-scheduler-demo.mp4',
+  'train-scheduler-route-optimizer':   'videos/train scheduler-demo.mp4',
   'crypto-prediction':                 'videos/crypto-demo.mp4'
 };
 
