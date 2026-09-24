@@ -296,7 +296,7 @@ window.addEventListener('scroll', () => {
 
 /* ── DEMO MODAL ────────────────────────────────────────── */
 const demoVideos = {
-  'bookworn':                          'videos/bookworn.mp4',
+  'bookworn':                          'videos/BOOKWORN.mp4',
   'ride-x':                            'videos/ridex.mp4',
   'train-scheduler-route-optimizer':   'videos/train scheduler.mp4',
   'Cloudy':                            'videos/CLOUDY.mp4'
