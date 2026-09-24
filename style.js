@@ -296,26 +296,35 @@ window.addEventListener('scroll', () => {
 
 /* ── DEMO MODAL ────────────────────────────────────────── */
 const demoVideos = {
-  'bookworn':                          'videos/bookworn-demo.mp4',
-  'ride-x':                            'videos/ridex-demo.mp4',
-  'train-scheduler-route-optimizer':   'videos/train scheduler-demo.mp4',
-  'crypto-prediction':                 'videos/crypto-demo.mp4'
+  'bookworn':                          'videos/bookworn.mp4',
+  'ride-x':                            'videos/ridex.mp4',
+  'train-scheduler-route-optimizer':   'videos/train scheduler.mp4',
+  'Cloudy':                            'videos/CLOUDY.mp4'
 };
 
 const demoTitles = {
   'bookworn':                          'Bookworn — Live Demo',
   'ride-x':                            'RIDE X — Live Demo',
   'train-scheduler-route-optimizer':   'Train Scheduler & Route Optimizer — Live Demo',
-  'crypto-prediction':                 'Crypto-prediction — Live Demo'
+  'Cloudy':                           'Cloudy — Live Demo'
+};
+
+const demoGithub = {
+  'bookworn':                          'https://github.com/RANAV2004/Bookworn',
+  'ride-x':                            'https://github.com/RANAV2004/RIDE-X',
+  'train-scheduler-route-optimizer':   'https://github.com/RANAV2004/train-scheduler-route-optimizer',
+  'Cloudy':                             'https://github.com/RANAV2004/CLOUDY'
 };
 
 function openDemoModal(projectKey) {
   const modal = document.getElementById('demoModal');
   const video = document.getElementById('demoVideo');
   const title = document.getElementById('demoModalTitle');
+  const sourceLink = document.getElementById('demoSourceLink');
 
   title.textContent = demoTitles[projectKey] || 'Project Demo';
   video.src = demoVideos[projectKey] || '';
+  sourceLink.href = demoGithub[projectKey] || 'https://github.com/RANAV2004';
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
   video.play().catch(() => {});
