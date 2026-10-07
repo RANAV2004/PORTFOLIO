@@ -41,7 +41,7 @@ function handleFormSubmit(e) {
     density: 0.00010,
     maxStars: 150,
     connectionDistance: 125,
-    lineOpacity: 0.13
+    lineOpacity: 0.28
   };
 
   function resize() {
@@ -98,8 +98,8 @@ function handleFormSubmit(e) {
           ctx.beginPath();
           ctx.moveTo(stars[i].x, stars[i].y);
           ctx.lineTo(stars[j].x, stars[j].y);
-          ctx.strokeStyle = `rgba(210, 220, 225, ${alpha})`;
-          ctx.lineWidth = 0.55;
+          ctx.strokeStyle = `rgba(60, 64, 70, ${alpha})`;
+          ctx.lineWidth = 0.7;
           ctx.stroke();
         }
       }
@@ -111,7 +111,7 @@ function handleFormSubmit(e) {
       const pulse = 0.82 + Math.sin(time * star.speed + star.twinkle) * 0.18;
       ctx.beginPath();
       ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(245, 248, 250, ${star.a * pulse})`;
+      ctx.fillStyle = `rgba(80, 85, 92, ${star.a * pulse})`;
       ctx.fill();
     }
 
@@ -122,38 +122,6 @@ function handleFormSubmit(e) {
   resize();
   draw();
 })();
-
-/* ── CURSOR ─────────────────────────────────────────────── */
-const cursor = document.getElementById('cursor');
-const ring   = document.getElementById('cursorRing');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-function animCursor() {
-  cursor.style.left = mx + 'px';
-  cursor.style.top  = my + 'px';
-  rx += (mx - rx) * 0.12;
-  ry += (my - ry) * 0.12;
-  ring.style.left = rx + 'px';
-  ring.style.top  = ry + 'px';
-  requestAnimationFrame(animCursor);
-}
-animCursor();
-document.querySelectorAll('a, button, .project-card').forEach(el => {
-  el.addEventListener('mouseenter', () => {
-    cursor.style.transform = 'translate(-50%,-50%) scale(2.5)';
-    cursor.style.boxShadow = '0 0 8px #fff, 0 0 18px #fff, 0 0 38px rgba(255,255,255,0.9), 0 0 65px rgba(255,255,255,0.45)';
-    ring.style.width = '50px';
-    ring.style.height = '50px';
-    ring.style.boxShadow = '0 0 14px rgba(255,255,255,0.55), 0 0 32px rgba(255,255,255,0.3)';
-  });
-  el.addEventListener('mouseleave', () => {
-    cursor.style.transform = 'translate(-50%,-50%) scale(1)';
-    cursor.style.boxShadow = '0 0 6px #ffffff, 0 0 14px rgba(255,255,255,0.9), 0 0 30px rgba(255,255,255,0.55), 0 0 50px rgba(255,255,255,0.25)';
-    ring.style.width = '32px';
-    ring.style.height = '32px';
-    ring.style.boxShadow = '0 0 12px rgba(255,255,255,0.35), 0 0 28px rgba(255,255,255,0.18)';
-  });
-});
 
 /* ── NAV MOBILE ─────────────────────────────────────────── */
 document.getElementById('navToggle').addEventListener('click', () => {
@@ -187,54 +155,19 @@ if (internshipItems.length) {
 }
 
 
-/* ── PROJECT CAROUSEL ───────────────────────────────── */
-const projectTrack = document.querySelector('.projects-track');
-const projectCards = document.querySelectorAll('.carousel-project-card');
-const projectDots = document.querySelectorAll('.project-dot');
-const projectPrev = document.querySelector('.project-carousel-prev');
-const projectNext = document.querySelector('.project-carousel-next');
-
-if (projectTrack && projectCards.length) {
-  let projectIndex = 1;
-
-  function updateProjectCarousel(index, animate = true) {
-    projectIndex = (index + projectCards.length) % projectCards.length;
-
-    projectCards.forEach((card, i) => card.classList.toggle('active', i === projectIndex));
-    projectDots.forEach((dot, i) => dot.classList.toggle('active', i === projectIndex));
-
-    if (window.innerWidth <= 600) {
-      projectCards[projectIndex].scrollIntoView({
-        behavior: animate ? 'smooth' : 'auto',
-        block: 'nearest',
-        inline: 'center'
-      });
-      return;
-    }
-
-    const wrap = projectTrack.parentElement;
-    const card = projectCards[projectIndex];
-    const target = wrap.offsetWidth / 2 - (card.offsetLeft + card.offsetWidth / 2);
-    projectTrack.style.transition = animate ? 'transform .65s cubic-bezier(.22,1,.36,1)' : 'none';
-    projectTrack.style.transform = `translateX(${target}px)`;
-  }
-
-  projectPrev?.addEventListener('click', () => updateProjectCarousel(projectIndex - 1));
-  projectNext?.addEventListener('click', () => updateProjectCarousel(projectIndex + 1));
-  projectDots.forEach((dot, i) => dot.addEventListener('click', () => updateProjectCarousel(i)));
-
-  let projectAuto = setInterval(() => updateProjectCarousel(projectIndex + 1), 5000);
-  const carousel = document.querySelector('.projects-carousel');
-
-  carousel?.addEventListener('mouseenter', () => clearInterval(projectAuto));
-  carousel?.addEventListener('mouseleave', () => {
-    projectAuto = setInterval(() => updateProjectCarousel(projectIndex + 1), 5000);
-  });
-
-  window.addEventListener('resize', () => updateProjectCarousel(projectIndex, false));
-  requestAnimationFrame(() => updateProjectCarousel(projectIndex, false));
-}
-
+/* ── PROJECT CARDS: live GitHub stars ─────────────── */
+/* ── PROJECT CARDS: live GitHub stars ─────────────── */
+document.querySelectorAll('.repo-card[data-repo]').forEach(card => {
+  fetch('https://api.github.com/repos/' + card.dataset.repo)
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (!data || !data.stargazers_count) return;
+      const stars = card.querySelector('.repo-stars');
+      stars.querySelector('.repo-stars-count').textContent = data.stargazers_count;
+      stars.hidden = false;
+    })
+    .catch(() => {});
+});
 /* ── SKILL BARS ─────────────────────────────────────────── */
 const barIO = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -267,15 +200,6 @@ setTimeout(() => {
   });
 }, 300);
 
-/* ── FORM ───────────────────────────────────────────────── */
-function handleFormSubmit(e) {
-  e.preventDefault();
-  const msg = document.getElementById('formMsg');
-  msg.style.display = 'block';
-  e.target.reset();
-  setTimeout(() => msg.style.display = 'none', 4000);
-}
-
 /* ── PUBLICATION TABS ────────────────────────────────────── */
 function switchPubTab(id, btn) {
   document.querySelectorAll('.pub-panel').forEach(p => p.classList.remove('active'));
@@ -305,14 +229,14 @@ const demoVideos = {
 const demoTitles = {
   'bookworn':                          'Bookworn — Live Demo',
   'ride-x':                            'RIDE X — Live Demo',
-  'train-scheduler-route-optimizer':   'Train Scheduler & Route Optimizer — Live Demo',
-  'Cloudy':                           'Cloudy — Live Demo'
+  'SKYRAIL':                           'SKYRAIL — Live Demo',
+  'Cloudy':                            'Cloudy — Live Demo'
 };
 
 const demoGithub = {
   'bookworn':                          'https://github.com/RANAV2004/Bookworn',
   'ride-x':                            'https://github.com/RANAV2004/RIDE-X',
-  'train-scheduler-route-optimizer':   'https://github.com/RANAV2004/train-scheduler-route-optimizer',
+  'SKYRAIL':                           'https://github.com/RANAV2004/SkyRail.git',
   'Cloudy':                             'https://github.com/RANAV2004/CLOUDY'
 };
 

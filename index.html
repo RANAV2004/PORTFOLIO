@@ -6,7 +6,7 @@
   <title>VANSH — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   
 </head>
@@ -15,20 +15,17 @@
   <canvas id="spaceBackground" aria-hidden="true"></canvas>
 
 
-  <!-- Cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
 
   <!-- Nav -->
   <nav id="navbar">
-    <a href="#home" class="nav-logo">Vansh<span></span></a>
+    <a href="#home" class="nav-logo">Vansh Rana<span></span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Education</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      
     </ul>
     <div class="nav-toggle" id="navToggle">
       <span></span><span></span><span></span>
@@ -83,159 +80,247 @@
       </div>
     </div>
   </section>
-  <!-- About -->
+  <!-- About + Skills -->
   <section id="about">
     <div class="section-label">01 — Who I am</div>
-    <h2 class="section-title">About</h2>
+    <h2 class="section-title">About &amp; Skills</h2>
     <div class="section-divider"></div>
-    <div class="about-grid reveal">
-      <div class="about-text">
-        <p>I'm a final-year B.Tech student in Information Technology with a deep focus on AI, machine learning, and software engineering. I build intelligent systems that solve real problems  from crypto-price prediction models to computer-vision pipelines and AI-powered recommendation engines. With hands-on internship experience in data analysis and applied ML, I bring both technical depth and a bias for shipping things that work. I also have a keen interest in finance and taxation, blending analytical thinking across both tech and business domains.</p>
+    <div class="about-split reveal">
+      <div class="about-text about-col">
+        <h3 class="about-col-title">About</h3>
+        <p>I'm a final-year B.Tech Information Technology student (graduating 2026) who builds software that solves real problems. My work spans full-stack web apps, AI-powered tools and blockchain systems, from a crypto-price prediction model (published research) to a blockchain escrow platform for rentals and a route-optimising train scheduler. Through a data analyst internship, an IBM AI/ML internship and 1.5+ years of freelance development, I've learned to take ideas from rough spec to something that ships and works.</p>
 
-<p>Outside the IDE, I'm equally driven. I'm a competitive basketball player and former school captain who led teams across multiple sports. I love trekking through new terrain, and when I need to decompress, you'll find me in the kitchen  cooking is where I bring the same creativity and precision I bring to code.</p>
-        <div class="about-stats">
-          
+        <p>Outside the IDE, I'm a competitive basketball player and former school captain, I love trekking, and I unwind by cooking, with the same care for detail I bring to code.</p>
+
+        <div class="about-looking">
+          <div class="about-looking-label">What I'm looking for</div>
+          <p class="about-looking-text">Full-time, entry-level roles where I can ship production software and grow fast alongside a strong engineering team.</p>
+          <ul class="about-roles">
+            <li>Software Engineer</li>
+            <li>AI / ML Engineer</li>
+            <li>Blockchain Developer</li>
+          </ul>
+          <a href="#contact" class="about-looking-cta">Open to opportunities — let's talk →</a>
+        </div>
+      </div>
+
+      <div class="skills-col" id="skills">
+        <h3 class="about-col-title">Skills</h3>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frontend</h3>
+            <ul class="skill-pills">
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>React JS</li>
+              <li>Next.js</li>  
+              <li>React Native</li>
+            </ul>
           </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Programming</h3>
+            <ul class="skill-pills">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>FastAPI</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">AI</h3>
+            <ul class="skill-pills">
+              <li>Generative AI</li>
+              <li>NLP</li>
+              <li>Numpy</li>
+              <li>Pandas</li>
+              <li>PyTorch</li>
+
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools &amp; Cloud</h3>
+            <ul class="skill-pills">
+             <li>Git/GitHub</li>
+             <li>VS Code</li>
+              <li>Docker</li>
+              <li>IBM Cloud</li>
+              <li>Render</li>
+              
+            </ul>
+          </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="experience">
+    <div class="section-label">02 — Education</div>
+    <h2 class="section-title">Education</h2>
+    <div class="section-divider"></div>
+
+    <div class="edu-timeline">
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-content">
+          <div class="edu-role">B.Tech — Information Technology</div>
+          <div class="edu-org">Shri Vaishnav Vidyapeeth Vishwavidyalaya, India</div>
+          <div class="edu-date">2022 – 2026</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-content">
+          <div class="edu-role">Class XII</div>
+          <div class="edu-org">IBS Global Academy, India</div>
+          <div class="edu-date">2022 · Maths, Physics, Chemistry, PE</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-dot"></div>
+        <div class="edu-content">
+          <div class="edu-role">Class X</div>
+          <div class="edu-org">IBS Global Academy, India</div>
+          <div class="edu-date">2020 · CBSE</div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-  <!-- Skills -->
-  <section id="skills">
-    <div class="section-label">03 — Expertise</div>
-    <h2 class="section-title">Skills</h2>
-    <div class="section-divider"></div>
-    <div class="skills-categories reveal">
-
-      <!-- 1. Frontend -->
-      <div class="skill-card">
-        <div class="skill-card-title">Frontend</div>
-        <div class="skill-item"><div class="skill-info"><span>HTML / CSS</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div></div>
-        <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div></div>
-        <div class="skill-item"><div class="skill-info"><span>React JS</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div></div>
-        <div class="skill-item"><div class="skill-info"><span>React Native</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="60"></div></div></div>
-      </div>
-
-      <!-- 2. Programming -->
-      <div class="skill-card">
-        <div class="skill-card-title">Programming</div>
-        <div class="skill-item"><div class="skill-info"><span>Python</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div></div>
-        <div class="skill-item"><div class="skill-info"><span>SQL</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div></div>
-        <div class="skill-item"><div class="skill-info"><span>Java</span><span class="skill-pct">50%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="50"></div></div></div>
-      </div>
-
-      <!-- 3. AI -->
-      <div class="skill-card">
-        <div class="skill-card-title">AI</div>
-        <div class="skill-item"><div class="skill-info"><span>Generative AI</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="95"></div></div></div>
-        <div class="skill-item"><div class="skill-info"><span>NLP</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="95"></div></div></div>
-      </div>
-
-      <!-- 4. Cloud -->
-      <div class="skill-card">
-        <div class="skill-card-title">Cloud & Computing</div>
-        <div class="skill-item"><div class="skill-info"><span>DOCKER</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div></div>
-        <div class="skill-item"><div class="skill-info"><span>IBM CLOUD </span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div></div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Projects -->
   <section id="projects">
-    <div class="projects-carousel-section">
-      <div class="projects-heading">
-        <div class="section-label">04 — Work</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p>Explore my AI, machine learning and software engineering projects.</p>
-      </div>
-
-      <div class="projects-carousel" id="projectsCarousel">
-        <button class="project-carousel-arrow project-carousel-prev" type="button" aria-label="Previous project">←</button>
-
-        <div class="projects-track-wrap">
-          <div class="projects-track">
-            <article class="carousel-project-card">
-              <div class="carousel-project-number">001</div>
-              <div class="carousel-project-icon">✦</div>
-              <h3>Bookworn</h3>
-              <p>AI-powered book recommendation website using React.js and IBM Watson Assistant, with personalized recommendations based on mood, genre and reading preferences.</p>
-              <div class="carousel-project-tags"><span>React.js</span><span>Python</span><span>IBM Watson</span></div>
-              <div class="carousel-project-links">
-                <a href="https://github.com/RANAV2004/Bookworn" target="_blank" class="carousel-project-link">VIEW ON GITHUB →</a>
-                <button class="carousel-project-link demo-btn" onclick="openDemoModal('bookworn')">LIVE DEMO →</button>
-              </div>
-            </article>
-
-            <article class="carousel-project-card active">
-              <div class="carousel-project-number">002</div>
-              <div class="carousel-project-icon purple">✧</div>
-              <h3>RIDE X</h3>
-              <p>Computer Vision and Deep Learning project designed to detect traffic signs, driver drowsiness, lane changes and pedestrian movements.</p>
-              <div class="carousel-project-tags"><span>Python</span><span>Computer Vision</span><span>Deep Learning</span></div>
-              <div class="carousel-project-links">
-                <a href="https://github.com/RANAV2004/RIDE-X" target="_blank" class="carousel-project-link">VIEW ON GITHUB →</a>
-                <button class="carousel-project-link demo-btn" onclick="openDemoModal('ride-x')">LIVE DEMO →</button>
-              </div>
-            </article>
-
-            <article class="carousel-project-card">
-              <div class="carousel-project-number">003</div>
-              <div class="carousel-project-icon cyan">⌁</div>
-              <h3>Train Scheduler& Route Optimizer</h3>
-              <p>Full-stack booking app with role-based JWT auth, email-OTP verification & password reset, Dijkstra route optimization with data visualizations, and CSV export; deployed on Render.</p>
-              <div class="carousel-project-tags"><span>Machine Learning</span><span>Cyber Security</span><span>Python</span></div>
-              <div class="carousel-project-links">
-                <a href="https://github.com/RANAV2004/Train-Scheduler-Route-Optimizer" target="_blank" class="carousel-project-link">VIEW ON GITHUB →</a>
-                <button class="carousel-project-link demo-btn" onclick="openDemoModal('train-scheduler-route-optimizer')">LIVE DEMO →</button>
-              </div>
-            </article>
-
-            <article class="carousel-project-card">
-              <div class="carousel-project-number">004</div>
-              <div class="carousel-project-icon green">◈</div>
-              <h3>Cloudy</h3>
-              <p>A weather application that provides real-time weather updates and forecasts.</p>
-              <div class="carousel-project-tags"><span>JavaScript</span><span>React</span><span>Python</span></div>
-              <div class="carousel-project-links">
-                <a href="https://github.com/RANAV2004/CLOUDY.git" target="_blank" class="carousel-project-link">VIEW ON GITHUB →</a>
-                <button class="carousel-project-link demo-btn" onclick="openDemoModal('Cloudy')">LIVE DEMO →</button>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <button class="project-carousel-arrow project-carousel-next" type="button" aria-label="Next project">→</button>
-      </div>
-
-      <div class="projects-carousel-dots">
-        <button class="project-dot" type="button" aria-label="Project 1"></button>
-        <button class="project-dot active" type="button" aria-label="Project 2"></button>
-        <button class="project-dot" type="button" aria-label="Project 3"></button>
-        <button class="project-dot" type="button" aria-label="Project 4"></button>
-      </div>
+    <div class="projects-heading">
+      <div class="section-label">03 — Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p>Explore my AI, machine learning and software engineering projects.</p>
     </div>
+
+    <div class="repo-grid">
+        <article class="repo-card" data-repo="RANAV2004/SKYRAIL">
+          <div class="repo-card-top">
+            <svg class="repo-folder" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.2l2 2.2h8.8A1.5 1.5 0 0 1 21 8.7v9.8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>
+            <span class="repo-stars" hidden><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.2 1.3-6.6L2.5 9.3l6.6-.8z"/></svg><span class="repo-stars-count"></span></span>
+          </div>
+           <h3 class="repo-name">SKYRAIL</h3>
+        <p class="repo-desc">Train search on real Indian Railways data with ML delay prediction, weather-aware route planning and Dijkstra. FastAPI + React.</p>
+       <div class="repo-footer repo-footer--split">
+             <div class="repo-footer-left">
+    <span class="repo-lang">Python</span>
+    <button type="button" class="repo-link" onclick="openDemoModal('skyrail')">Live demo ▸</button>
+    </div>
+    <div class="repo-footer-right">
+    <a href="https://skyrail-web.onrender.com/login" target="_blank" rel="noopener" class="repo-link">Live Site ↗</a>
+    <a href="https://github.com/RANAV2004/SkyRail" target="_blank" rel="noopener" class="repo-link">View on GitHub ↗</a>
+  </div>
+</div>
+        </article>
+         <article class="repo-card" data-repo="RANAV2004/Tesla-Prediction Model">
+          <div class="repo-card-top">
+            <svg class="repo-folder" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.2l2 2.2h8.8A1.5 1.5 0 0 1 21 8.7v9.8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>
+            <span class="repo-stars" hidden><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.2 1.3-6.6L2.5 9.3l6.6-.8z"/></svg><span class="repo-stars-count"></span></span>
+          </div>
+          <h3 class="repo-name">Tesla Prediction Model</h3>
+          <p class="repo-desc">Machine learning model for predicting Tesla stock prices based on historical data and market trends.</p>
+          <div class="repo-footer">
+            <span class="repo-lang">Python</span>
+            <div class="repo-links">
+              <button type="button" class="repo-link" onclick="openDemoModal('tesla-prediction-model')">Live demo ▸</button>
+              <a href="https://github.com/RANAV2004/tesla-stock-prediction-" target="_blank" rel="noopener" class="repo-link">View on GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="repo-card" data-repo="RANAV2004/TrustRent">
+          <div class="repo-card-top">
+            <svg class="repo-folder" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.2l2 2.2h8.8A1.5 1.5 0 0 1 21 8.7v9.8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>
+            <span class="repo-stars" hidden><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.2 1.3-6.6L2.5 9.3l6.6-.8z"/></svg><span class="repo-stars-count"></span></span>
+          </div>
+          <h3 class="repo-name">TrustRent</h3>
+          <p class="repo-desc"> Blockchain-Based Security Deposit Escrow and Verified Tenancy System for the Indian Rental Market.</p>
+          <div class="repo-footer">
+            <span class="repo-lang">Solidity</span>
+            <div class="repo-links">
+              <button type="button" class="repo-link" onclick="openDemoModal('trustrent')">Live demo-(TBR) ▸</button>
+              <a href="https://github.com/RANAV2004/TrustRent" target="_blank" rel="noopener" class="repo-link">View on GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </article>
+     <article class="repo-card" data-repo="RANAV2004/RIDE-X">
+          <div class="repo-card-top">
+            <svg class="repo-folder" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.2l2 2.2h8.8A1.5 1.5 0 0 1 21 8.7v9.8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>
+            <span class="repo-stars" hidden><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.2 1.3-6.6L2.5 9.3l6.6-.8z"/></svg><span class="repo-stars-count"></span></span>
+          </div>
+          <h3 class="repo-name">RIDE X</h3>
+          <p class="repo-desc">Computer Vision and Deep Learning project designed to detect traffic signs, driver drowsiness, lane changes and pedestrian movements.</p>
+          <div class="repo-footer">
+            <span class="repo-lang">Python</span>
+            <div class="repo-links">
+              <button type="button" class="repo-link" onclick="openDemoModal('ride-x')">Live demo ▸</button>
+              <a href="https://github.com/RANAV2004/RIDE-X" target="_blank" rel="noopener" class="repo-link">View on GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="repo-card" data-repo="RANAV2004/Bookworn">
+          <div class="repo-card-top">
+            <svg class="repo-folder" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.2l2 2.2h8.8A1.5 1.5 0 0 1 21 8.7v9.8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>
+            <span class="repo-stars" hidden><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.2 1.3-6.6L2.5 9.3l6.6-.8z"/></svg><span class="repo-stars-count"></span></span>
+          </div>
+      
+        <h3 class="repo-name">Bookworn</h3>
+          <p class="repo-desc">AI-powered book recommendation website using React.js and IBM Watson Assistant, with personalized recommendations based on mood, genre and reading preferences.</p>
+          <div class="repo-footer">
+            <span class="repo-lang">JavaScript</span>
+            <div class="repo-links">
+              <button type="button" class="repo-link" onclick="openDemoModal('bookworn')">Live demo ▸</button>
+              <a href="https://github.com/RANAV2004/Bookworn" target="_blank" rel="noopener" class="repo-link">View on GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+               <article class="repo-card" data-repo="RANAV2004/CLOUDY">
+          <div class="repo-card-top">
+            <svg class="repo-folder" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.2l2 2.2h8.8A1.5 1.5 0 0 1 21 8.7v9.8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></svg>
+            <span class="repo-stars" hidden><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="m12 2.5 2.9 6 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.2 1.3-6.6L2.5 9.3l6.6-.8z"/></svg><span class="repo-stars-count"></span></span>
+          </div>
+          <h3 class="repo-name">Cloudy</h3>
+          <p class="repo-desc">A weather application that provides real-time weather updates and forecasts.</p>
+          <div class="repo-footer">
+            <span class="repo-lang">JavaScript</span>
+            <div class="repo-links">
+              <button type="button" class="repo-link" onclick="openDemoModal('Cloudy')">Live demo ▸</button>
+              <a href="https://github.com/RANAV2004/CLOUDY" target="_blank" rel="noopener" class="repo-link">View on GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+         
+
+        
+
+    <div class="repo-grid-rule"></div>
     <a href="https://github.com/RANAV2004" target="_blank" rel="noopener" class="github-repos-btn">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
-  View all repositories
-</a>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+      View all repositories
+    </a>
   </section>
 
-  
   <!-- Certifications + Internships -->
   <section id="research">
-    <div class="section-label">05 — Research & IP</div>
+    <div class="section-label">04 — Research & IP</div>
     <div class="section-divider"></div>
 
     <!-- Publications sub-section -->
     <div class="publications-section reveal">
-      <h2 class="pub-title">Publications &amp; Conferences  <em></em></h2>
+      <h2 class="pub-title">Publications &amp; Research  <em></em></h2>
       <div class="pub-tabs">
         <button class="pub-tab active" onclick="switchPubTab('publications', this)">Publications (0)</button>
-        <button class="pub-tab" onclick="switchPubTab('conferences', this)">Conferences (0)</button>
+        <button class="pub-tab" onclick="switchPubTab('research', this)">Research (0)</button>
       </div>
 
       <div id="publications" class="pub-panel active">
@@ -248,8 +333,8 @@
         -->
       </div>
 
-      <div id="conferences" class="pub-panel">
-        <div class="pub-empty">No conference entries yet.</div>
+      <div id="research" class="pub-panel">
+        <div class="pub-empty">No research entries yet.</div>
       </div>
     </div>
 
@@ -261,7 +346,7 @@
 
       <!-- Certifications: featured-card layout -->
       <div class="certifications-featured">
-        <div class="section-label">06 —Certifications </div>
+        <div class="section-label">05 — Certifications </div>
         <div class="certifications-heading">
           <h2 class="section-title">Featured Certifications</h2>
           <p>Professional certifications and technical credentials in AI, cloud computing and software development.</p>
@@ -346,7 +431,7 @@
 
       <!-- Internships: horizontal "Journey" timeline -->
       <div class="journey-section">
-        <div class="section-label">07 — Journey</div>
+        <div class="section-label">06 — Journey</div>
         <div class="journey-heading">
           <div class="journey-label">Experience</div>
           <h2 class="journey-title">The <em>journey</em></h2>
@@ -403,43 +488,9 @@
     </div>
   </section>
 
-    <!-- Experience -->
-  <section id="experience">
-    <div class="section-label">08 — Education</div>
-    <h2 class="section-title">Education</h2>
-    <div class="section-divider"></div>
-
-    <div class="edu-timeline">
-      <div class="edu-item">
-        <div class="edu-dot"></div>
-        <div class="edu-content">
-          <div class="edu-role">B.Tech — Information Technology</div>
-          <div class="edu-org">Shri Vaishnav Vidyapeeth Vishwavidyalaya, India</div>
-          <div class="edu-date">2022 – 2026</div>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-dot"></div>
-        <div class="edu-content">
-          <div class="edu-role">Class XII</div>
-          <div class="edu-org">IBS Global Academy, India</div>
-          <div class="edu-date">2022 · Maths, Physics, Chemistry, PE</div>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-dot"></div>
-        <div class="edu-content">
-          <div class="edu-role">Class X</div>
-          <div class="edu-org">IBS Global Academy, India</div>
-          <div class="edu-date">2020 · CBSE</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact -->
   <section id="contact">
-    <div class="section-label">09 — Let's Talk</div>
+    <div class="section-label">07 — Let's Talk</div>
     <h2 class="section-title"></h2>
     <div class="section-divider"></div>
     <div class="contact-wrap reveal">
@@ -461,7 +512,7 @@
           </div>
           <div>
             <div class="contact-detail-label">LinkedIn</div>
-            <a href="https://www.linkedin.com/in/vanshrana-ai/" target="_blank" class="contact-detail-val" style="color:rgba(230, 225, 225, 0.65);text-decoration:underline;">linkedin.com/in/vanshrana-ai</a>
+            <a href="https://www.linkedin.com/in/vanshrana-ai/" target="_blank" class="contact-detail-val" style="color:rgba(25, 30, 30, 0.65);text-decoration:underline;">linkedin.com/in/vanshrana-ai</a>
           </div>
         </div>
          <div class="contact-detail">   
