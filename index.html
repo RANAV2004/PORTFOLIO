@@ -23,8 +23,11 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Education</a></li>
-      <li><a href="#research">Research</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#Certifications">Certifications</a></li> 
+      <li><a href="#Experience">Experience</a></li>
+      
       
     </ul>
     <div class="nav-toggle" id="navToggle">
@@ -45,9 +48,9 @@
         <a href="#projects" class="btn btn-ghost">See my work</a>
       </div>
       <div class="hero-stats">
-        <div class="hero-stat"><span class="hero-stat-val">3+</span><span class="hero-stat-lbl">Internships</span></div>
-        <div class="hero-stat"><span class="hero-stat-val">8+</span><span class="hero-stat-lbl">Certifications</span></div>
-        <div class="hero-stat"><span class="hero-stat-val">5+</span><span class="hero-stat-lbl">Projects</span></div>
+        <div class="hero-stat"><span class="hero-stat-val">2+</span><span class="hero-stat-lbl">Internships</span></div>
+        <div class="hero-stat"><span class="hero-stat-val">6+</span><span class="hero-stat-lbl">Certifications</span></div>
+        <div class="hero-stat"><span class="hero-stat-val">6+</span><span class="hero-stat-lbl">Projects</span></div>
         <div class="hero-stat"><span class="hero-stat-val">1.5+</span><span class="hero-stat-lbl">Years Freelancing</span></div>
       </div>
     </div>
@@ -56,7 +59,7 @@
     <div class="hero-illustration" aria-hidden="true">
       <div class="hero-photo-wrap">
         <!-- Replace src below with the path/filename of your photo -->
-        <img src="images/ChatGPT Image Sep 1, 2026, 06_33_03 PM.png" alt="Vansh Rana" class="hero-photo" />
+        <img src="images/Photo.png" alt="Vansh Rana" class="hero-photo" />
 
         <!-- Social buttons below photo -->
         <div class="hero-socials">
@@ -70,7 +73,7 @@
               <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/>
             </svg>
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&to=vanshrana22042004@gmail.com" target="_blank" rel="noopener" class="hero-social" aria-label="Email">
+          <a href="https://mail.google.com/mail/?view=cm&to=vanshrana2204@gmail.com" target="_blank" rel="noopener" class="hero-social" aria-label="Email">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="3" y="5" width="18" height="14" rx="2"/>
               <path d="m3 7 9 6 9-6"/>
@@ -88,69 +91,83 @@
     <div class="about-split reveal">
       <div class="about-text about-col">
         <h3 class="about-col-title">About</h3>
-        <p>I'm a final-year B.Tech Information Technology student (graduating 2026) who builds software that solves real problems. My work spans full-stack web apps, AI-powered tools and blockchain systems, from a crypto-price prediction model (published research) to a blockchain escrow platform for rentals and a route-optimising train scheduler. Through a data analyst internship, an IBM AI/ML internship and 1.5+ years of freelance development, I've learned to take ideas from rough spec to something that ships and works.</p>
-
-        <p>Outside the IDE, I'm a competitive basketball player and former school captain, I love trekking, and I unwind by cooking, with the same care for detail I bring to code.</p>
-
-        <div class="about-looking">
-          <div class="about-looking-label">What I'm looking for</div>
-          <p class="about-looking-text">Full-time, entry-level roles where I can ship production software and grow fast alongside a strong engineering team.</p>
-          <ul class="about-roles">
-            <li>Software Engineer</li>
-            <li>AI / ML Engineer</li>
-            <li>Blockchain Developer</li>
-          </ul>
-          <a href="#contact" class="about-looking-cta">Open to opportunities — let's talk →</a>
-        </div>
+        <p>I'm a software engineer with a B.Tech in Computer Science and Engineering (AI specialisation, 2026). I build full-stack applications in Python, FastAPI and React. I'm at my best when a system fails in ways that aren't obvious: I trace the bad result back to the data or the algorithm causing it and fix it there.</p>
+        <p>That's how I built SkyRail, a live train-route planner running on Indian Railways data. Before routing could work, I rebuilt 331 broken timetables and placed 269 stations that had no coordinates, which gave me a clean network of 4,735 stations. Yen's algorithm kept returning near-identical routes, so I replaced it with a penalty-based Dijkstra that finds genuinely different ones. I trained a LightGBM delay model on 1.17M real arrival records, checked it against a historical-average baseline, and shipped the whole system with 49 automated tests.</p>
+        <p>I've done the same kind of work for others. As a Data Analyst Intern at Sustainable Ships (Norway, remote), I wrote Python automation that cut manual lookup time by about 40% and merged inconsistent vessel data from five classification societies into one schema. In 1.5+ years of freelancing I've delivered client projects from requirements through deployment. I've also published research on cryptocurrency price prediction using ML and deep learning.</p>
+        <p>I'm looking for a full-time <strong>Software Engineer or AI/ML Engineer</strong> role on a team that wants software that works on real data.</p>
       </div>
 
       <div class="skills-col" id="skills">
         <h3 class="about-col-title">Skills</h3>
         <div class="skill-groups">
           <div class="skill-group">
-            <h3 class="skill-group-title">Frontend</h3>
-            <ul class="skill-pills">
-              <li>HTML / CSS</li>
-              <li>JavaScript</li>
-              <li>React JS</li>
-              <li>Next.js</li>  
-              <li>React Native</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group-title">Programming</h3>
+            <h3 class="skill-group-title">Languages</h3>
             <ul class="skill-pills">
               <li>Python</li>
               <li>JavaScript</li>
-              <li>FastAPI</li>
-              <li>Node.js</li>
               <li>SQL</li>
-              <li>Java</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3 class="skill-group-title">AI</h3>
+            <h3 class="skill-group-title">Backend</h3>
             <ul class="skill-pills">
-              <li>Generative AI</li>
+              <li>FastAPI</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST APIs</li>
+              <li>JWT Auth</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frontend</h3>
+            <ul class="skill-pills">
+              <li>React</li>
+              <li>HTML / CSS</li>
+              <li>TypeScript</li>
+              
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">AI / ML</h3>
+            <ul class="skill-pills">
+              <li>Machine Learning</li>
+              <li>Deep Learning</li>
               <li>NLP</li>
-              <li>Numpy</li>
+              <li>LightGBM</li>
+              <li>IBM Watson</li>
+              <!-- Add only if used in a project: scikit-learn, OpenCV, TensorFlow/Keras, PyTorch -->
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Data</h3>
+            <ul class="skill-pills">
               <li>Pandas</li>
-              <li>PyTorch</li>
-
+              <li>NumPy</li>
+              <li>Power BI</li>
+              <li>Tableau</li>
+              <li>Streamlit</li>
+              <li>Excel</li>
+              <li>Selenium</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Databases</h3>
+            <ul class="skill-pills">
+              <li>MySQL</li>
+              <li>MongoDB</li>
             </ul>
           </div>
           <div class="skill-group">
             <h3 class="skill-group-title">Tools &amp; Cloud</h3>
             <ul class="skill-pills">
-             <li>Git/GitHub</li>
-             <li>VS Code</li>
+              <li>Git / GitHub</li>
               <li>Docker</li>
               <li>IBM Cloud</li>
               <li>Render</li>
-              
+              <li>Vercel</li>
             </ul>
           </div>
-    </div>
+        </div>
       </div>
     </div>
   </section>
@@ -165,8 +182,9 @@
       <div class="edu-item">
         <div class="edu-dot"></div>
         <div class="edu-content">
-          <div class="edu-role">B.Tech — Information Technology</div>
-          <div class="edu-org">Shri Vaishnav Vidyapeeth Vishwavidyalaya, India</div>
+          <div class="edu-role">Shri Vaishnav Vidyapeeth Vishwavidyalaya</div>
+          <div class="edu-org">Bachelor of Technology (B. Tech), Computer Science and Engineering with Specialization in Artificial Intelligence (IBM)</div>
+          <div class="edu-org">Indor,Madhya Pradesh, India</div>
           <div class="edu-date">2022 – 2026</div>
         </div>
       </div>
@@ -174,8 +192,9 @@
         <div class="edu-dot"></div>
         <div class="edu-content">
           <div class="edu-role">Class XII</div>
+          <div class="edu-date"> Maths, Physics, Chemistry, PE</div>
           <div class="edu-org">IBS Global Academy, India</div>
-          <div class="edu-date">2022 · Maths, Physics, Chemistry, PE</div>
+          <div class="edu-date">2022 · CBSE</div>
         </div>
       </div>
       <div class="edu-item">
@@ -310,13 +329,10 @@
     </a>
   </section>
 
-  <!-- Certifications + Internships -->
-  <section id="research">
+<section id="research">
     <div class="section-label">04 — Research & IP</div>
     <div class="section-divider"></div>
-
-    <!-- Publications sub-section -->
-    <div class="publications-section reveal">
+ <div class="publications-section reveal">
       <h2 class="pub-title">Publications &amp; Research  <em></em></h2>
       <div class="pub-tabs">
         <button class="pub-tab active" onclick="switchPubTab('publications', this)">Publications (0)</button>
@@ -338,18 +354,17 @@
       </div>
     </div>
 
+  <!-- Certifications + Experience (two-column grid) -->
+  <section id="credentials">
+    <section id="Certifications"> 
     <div class="cert-intern-grid reveal">
 
-
-
-
-
-      <!-- Certifications: featured-card layout -->
-      <div class="certifications-featured">
-        <div class="section-label">05 — Certifications</div>
+      <!-- Certifications -->
+      <div class="certifications-featured" id="certifications">
+        <div class="section-label">04 — Certifications</div>
         <div class="certifications-heading">
           <h2 class="section-title">Certifications &amp; Training</h2>
-          <p>Professional certifications and technical credentials in AI, cloud computing and software development.</p>
+          <p>Credentials in AI, machine learning, cloud and software engineering.</p>
         </div>
 
         <div class="certifications-grid">
@@ -357,114 +372,111 @@
           <article class="certification-card">
             <div class="certification-card-top">
               <div class="certification-icon">
-                <img src="images/IBM.png" alt="Certification Icon" />
+                <img src="images/IBM.png" alt="IBM logo" />
               </div>
-              <a href="certification/Coursera T8TB270CIFH6.pdf" target="_blank" class="certification-open" aria-label="View IBM AI Developer certificate">↗</a>
+              <a href="certification/Coursera%20T8TB270CIFH6.pdf" target="_blank" rel="noopener" class="certification-open" aria-label="View IBM AI Developer certificate">↗</a>
             </div>
-            <div class="certification-provider">COURSERA · 2025</div>
-            <h3>IBM AI Developer</h3>
-            <p>Professional certification covering AI application development, Python, APIs and practical software development workflows.</p>
+            <div class="certification-provider">IBM · COURSERA · 2025</div>
+            <h3>IBM AI Developer Professional Certificate</h3>
+            <p>AI application development with Python, APIs and practical software development workflows.</p>
             <div class="certification-tags">
               <span>AI</span>
               <span>Python</span>
-              <span>IBM</span>
             </div>
-            <a href="certification/Coursera T8TB270CIFH6.pdf" target="_blank" class="certification-link">VIEW CERTIFICATE →</a>
+            <a href="certification/Coursera%20T8TB270CIFH6.pdf" target="_blank" rel="noopener" class="certification-link">VIEW CERTIFICATE →</a>
           </article>
 
           <article class="certification-card">
             <div class="certification-card-top">
-              <div class="certification-icon cloud">
-                <img src="images/nptel.png" alt="Certification Icon" />
+              <div class="certification-icon">
+                <img src="images/coursera.png" alt="Coursera logo" />
               </div>
-              <a href="certification/Cloud Computing.pdf" target="_blank" class="certification-open" aria-label="View Cloud Computing certificate">↗</a>
+              <a href="certification/Coursera_TB2GP3D59BYU.pdf" target="_blank" rel="noopener" class="certification-open" aria-label="View Machine Learning Specialization certificate">↗</a>
             </div>
-            <div class="certification-provider">NPTEL · 2023</div>
-            <h3>Cloud Computing</h3>
-            <p>Certification focused on cloud architecture, distributed systems, virtualization and modern cloud computing concepts.</p>
+            <div class="certification-provider">STANFORD · DEEPLEARNING.AI · 2026</div>
+            <h3>Machine Learning Specialization</h3>
+            <p>Andrew Ng's three-course specialization: supervised learning, neural networks, unsupervised learning, recommender systems and reinforcement learning.</p>
             <div class="certification-tags">
-              <span>Cloud</span>
-              <span>Distributed Systems</span>
-              <span>NPTEL</span>
+              <span>Machine Learning</span>
+              <span>Neural Networks</span>
             </div>
-            <a href="certification/Cloud Computing.pdf" target="_blank" class="certification-link">VIEW CERTIFICATE →</a>
+            <a href="certification/Coursera_TB2GP3D59BYU.pdf" target="_blank" rel="noopener" class="certification-link">VIEW CERTIFICATE →</a>
+          </article>
+
+          <article class="certification-card">
+            <div class="certification-card-top">
+              <div class="certification-icon">
+                <img src="images/HPE.png" alt="HPE logo" />
+              </div>
+              <a href="certification/HPE.pdf" target="_blank" rel="noopener" class="certification-open" aria-label="View HPE Software Engineering Job Simulation certificate">↗</a>
+            </div>
+            <div class="certification-provider">HPE · FORAGE · 2026</div>
+            <h3>Software Engineering Job Simulation</h3>
+            <p>Simulated software engineering tasks covering real-world development challenges and collaborative workflows.</p>
+            <div class="certification-tags">
+              <span>Software Engineering</span>
+              <span>Python</span>
+            </div>
+            <a href="certification/HPE.pdf" target="_blank" rel="noopener" class="certification-link">VIEW CERTIFICATE →</a>
           </article>
 
           <article class="certification-card">
             <div class="certification-card-top">
               <div class="certification-icon ai">
-                <img src="images/IBM.png" alt="Certification Icon" />
+                <img src="images/IBM.png" alt="IBM logo" />
               </div>
-              <a href="certification/Generative AI.pdf" target="_blank" class="certification-open" aria-label="View Generative AI certificate">↗</a>
+              <a href="certification/Generative%20AI.pdf" target="_blank" rel="noopener" class="certification-open" aria-label="View Generative AI certificate">↗</a>
             </div>
             <div class="certification-provider">IBM</div>
             <h3>Generative AI</h3>
-            <p>Technical credential focused on generative AI concepts, foundation models and practical AI-powered applications.</p>
+            <p>Generative AI concepts, foundation models and practical AI-powered applications.</p>
             <div class="certification-tags">
               <span>Generative AI</span>
               <span>LLMs</span>
-              <span>IBM</span>
             </div>
-            <a href="certification/Generative AI.pdf" target="_blank" class="certification-link">VIEW CERTIFICATE →</a>
+            <a href="certification/Generative%20AI.pdf" target="_blank" rel="noopener" class="certification-link">VIEW CERTIFICATE →</a>
           </article>
 
           <article class="certification-card">
             <div class="certification-card-top">
               <div class="certification-icon">
-                <img src="images/coursera.png" alt="Certification Icon" />
+                <img src="images/deloitte.png" alt="Deloitte logo" />
               </div>
-              <a href="certification/Coursera_TB2GP3D59BYU.pdf" target="_blank" class="certification-open" aria-label="View Machine Learning Specialization certificate">↗</a>
+              <a href="certification/Data%20analyst%20.pdf" target="_blank" rel="noopener" class="certification-open" aria-label="View Deloitte Data Analytics Job Simulation certificate">↗</a>
             </div>
-            <div class="certification-provider">COURSERA · 2026</div>
-            <h3>Machine Learning Specialization</h3>
-            <p>Andrew Ng's 3-course Stanford / DeepLearning.AI specialization covering supervised learning, neural networks, unsupervised learning, recommender systems and reinforcement learning.</p>
-            <div class="certification-tags">
-              <span>Machine Learning</span>
-              <span>Neural Networks</span>
-              <span>Stanford</span>
-            </div>
-            <a href="certification/Coursera_TB2GP3D59BYU.pdf" target="_blank" class="certification-link">VIEW CERTIFICATE →</a>
-          </article>
-
-           <article class="certification-card">
-            <div class="certification-card-top">
-              <div class="certification-icon">
-                <img src="images/deloitte.png" alt="Certification Icon" />
-              </div>
-              <a href="certification/Coursera_TB2GP3D59BYU.pdf" target="_blank" class="certification-open" aria-label="View Machine Learning Specialization certificate">↗</a>
-            </div>
-            <div class="certification-provider">DELOITTE · 2025</div>
+            <div class="certification-provider">DELOITTE · FORAGE · 2025</div>
             <h3>Data Analytics Job Simulation</h3>
-            <p>Completed a simulated data analytics job role, gaining hands-on experience with real-world datasets and business problems.</p>
+            <p>Simulated data analytics tasks working with real-world datasets and business problems.</p>
             <div class="certification-tags">
               <span>Data Analytics</span>
               <span>Tableau</span>
             </div>
-            <a href="certification/Data analyst .pdf" target="_blank" class="certification-link">VIEW CERTIFICATE →</a>
+            <a href="certification/Data%20analyst%20.pdf" target="_blank" rel="noopener" class="certification-link">VIEW CERTIFICATE →</a>
           </article>
 
           <article class="certification-card">
             <div class="certification-card-top">
-              <div class="certification-icon">
-                <img src="images/HPE.png" alt="Certification Icon" />
+              <div class="certification-icon cloud">
+                <img src="images/nptel.png" alt="NPTEL logo" />
               </div>
-              <a href="certification/HPE.pdf" target="_blank" class="certification-open" aria-label="View Machine Learning Specialization certificate">↗</a>
+              <a href="certification/Cloud%20Computing.pdf" target="_blank" rel="noopener" class="certification-open" aria-label="View Cloud Computing certificate">↗</a>
             </div>
-            <div class="certification-provider">HPE · 2026</div>
-            <h3>Software Engineer Job Simulation</h3>
-            <p>Completed a simulated software engineering job role, gaining hands-on experience with real-world development challenges and collaborative workflows.</p>
+            <div class="certification-provider">NPTEL · 2023</div>
+            <h3>Cloud Computing</h3>
+            <p>Cloud architecture, distributed systems and virtualization.</p>
             <div class="certification-tags">
-              <span>Software Engineering</span>
-              <span>Python</span>
+              <span>Cloud</span>
+              <span>Distributed Systems</span>
             </div>
-            <a href="certification/HPE.pdf" target="_blank" class="certification-link">VIEW CERTIFICATE →</a>
+            <a href="certification/Cloud%20Computing.pdf" target="_blank" rel="noopener" class="certification-link">VIEW CERTIFICATE →</a>
           </article>
+
         </div>
       </div>
 
-      <!-- Internships: horizontal "Journey" timeline -->
-      <div class="journey-section">
-        <div class="section-label">06 — Journey</div>
+      <!-- Experience -->
+        <div class="journey-section" id="experience">
+        <div class="section-label">05 — Experience</div>
         <div class="journey-heading">
           <div class="journey-label">Experience</div>
           <h2 class="journey-title">The <em>journey</em></h2>
@@ -473,132 +485,138 @@
         <div class="journey-track-wrap">
           <div class="journey-items">
 
-            <!-- Item 1 — Sustainable Ships -->
             <div class="journey-item">
               <div class="journey-dot"></div>
               <div class="journey-year">2026</div>
               <div class="journey-role">Data Analyst Intern</div>
-              <div class="journey-company">Sustainable Ships</div>
+              <div class="journey-company">Sustainable Ships (Norway, remote)</div>
               <div class="journey-meta">Feb – May 2026</div>
-              <div class="journey-desc">
-                Contributed to maritime decarbonization initiatives — researched
-                Onshore Power Supply (OPS) solutions for major U.S. ports and
-                collected vessel notations for classification societies.
-              </div>
+              <div class="journey-desc">Built reusable Python (Pandas) automation that cut manual data lookup time by ~40% across 8+ reports. Standardized 200+ vessel notations from 5 classification societies (DNV, LR, ABS, BV, ClassNK) into one schema, and analysed shore-power infrastructure at 15+ U.S. ports to inform decarbonization recommendations.</div>
               <div class="journey-tags">
-                <span>Data Analysis</span>
-                <span>Sustainability</span>
-                <span>Research</span>
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Tableau</span>
+                <span>Data Cleaning</span>
               </div>
-              <a href="certification/Data analyst.pdf" target="_blank" class="journey-link">View Certificate ↗</a>
+              <a href="certification/Data%20analyst.pdf" target="_blank" rel="noopener" class="journey-link">View certificate ↗</a>
             </div>
 
-            <!-- Item 2 — IBM SkillsBuild -->
+          
             <div class="journey-item">
               <div class="journey-dot"></div>
               <div class="journey-year">2025</div>
-              <div class="journey-role">PBEL — AI &amp; Machine Learning</div>
+              <div class="journey-role">AI &amp; Machine Learning Intern (PBEL)</div>
               <div class="journey-company">IBM SkillsBuild</div>
-              <div class="journey-meta">Virtual Internship</div>
-              <div class="journey-desc">
-                Completed an AI and Machine Learning virtual internship through the
-                IBM SkillsBuild PBEL Program — hands-on work with core ML concepts,
-                model evaluation, and applied AI use cases.
-              </div>
+              <div class="journey-meta">Sep – Nov 2025 · Virtual</div>
+              <div class="journey-desc">Built Bookworn, an AI book recommendation chatbot on IBM Watson Assistant, designing and training 20+ intents and entities for discovery, filtering and recommendation flows.</div>
               <div class="journey-tags">
-                <span>Artificial Intelligence</span>
-                <span>Machine Learning</span>
-                <span>IBM SkillsBuild</span>
+                <span>IBM Watson</span>
+                <span>NLP</span>
+                <span>Conversational AI</span>
               </div>
-              <a href="certification/IBMCEP PBELAI1IN Certificate _ IBMMooc.pdf" target="_blank" class="journey-link">View Certificate ↗</a>
+              <a href="certification/IBMCEP%20PBELAI1IN%20Certificate%20_%20IBMMooc.pdf" target="_blank" rel="noopener" class="journey-link">View certificate ↗</a>
+            </div>
+
+             <div class="journey-item">
+              <div class="journey-dot"></div>
+              <div class="journey-year">2025 – Present</div>
+              <div class="journey-role">Freelance Software Developer</div>
+              <div class="journey-company">Self-employed (remote)</div>
+              <div class="journey-meta">Jan 2025 – Present</div>
+              <div class="journey-desc">Delivered 3 client projects end to end, from requirements to deployment on Vercel and Render: a React website for an occupational therapy practice, a portfolio site for a supply-chain professional (shipped in 10 days), and a Python + Selenium scraper that extracted 2,000+ shipping routes from a JavaScript-rendered site.</div>
+              <div class="journey-tags">
+                <span>React</span>
+                <span>Python</span>
+                <span>Selenium</span>
+                <span>Deployment</span>
+              </div>
             </div>
 
           </div>
         </div>
-
       </div>
 
     </div>
   </section>
+ 
+  </section> <!-- closes #research: this was missing, and it's why the footer got squashed into the centre -->
 
   <!-- Contact -->
   <section id="contact">
-    <div class="section-label">07 — Let's Talk</div>
-    <h2 class="section-title"></h2>
+    <div class="section-label">07 — Contact</div>
+    <h2 class="section-title">Let's talk</h2>
     <div class="section-divider"></div>
     <div class="contact-wrap reveal">
       <div class="contact-info">
-        <h3 class="contact-info-title">I'm always looking up for conversation.</h3>
+        <h3 class="contact-info-title">Open to full-time Software Engineer and AI/ML Engineer roles. I reply within a day.</h3>
+
         <div class="contact-detail">
           <div class="contact-icon">
-            <img src="images/gmail.png" alt="Email Icon" style="width: 25px;height:22px;">
+            <img src="images/gmail.png" alt="" style="width:25px;height:22px;">
           </div>
           <div>
             <div class="contact-detail-label">Email</div>
-            <a href="https://mail.google.com/mail/?view=cm&to=vanshrana22042004@gmail.com" target="_blank" class="contact-detail-val" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(0,0,0,0.2);padding-bottom:1px;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#00c896'" onmouseout="this.style.borderColor='rgba(0,0,0,0.2)'">vanshrana22042004@gmail.com</a>
+            <a href="mailto:vanshrana2204@gmail.com" class="contact-detail-val" style="color:inherit;text-decoration:underline;">vanshrana2204@gmail.com</a>
           </div>
         </div>
-        
+
         <div class="contact-detail">
           <div class="contact-icon">
-            <img src="images/linkedln.png" alt="LinkedIn Icon" style="width: 25px;height:22px;">
+            <img src="images/linkedln.png" alt="" style="width:25px;height:22px;">
           </div>
           <div>
             <div class="contact-detail-label">LinkedIn</div>
-            <a href="https://www.linkedin.com/in/vanshrana-ai/" target="_blank" class="contact-detail-val" style="color:rgba(25, 30, 30, 0.65);text-decoration:underline;">linkedin.com/in/vanshrana-ai</a>
+            <a href="https://www.linkedin.com/in/vanshrana-ai/" target="_blank" rel="noopener" class="contact-detail-val" style="color:inherit;text-decoration:underline;">linkedin.com/in/vanshrana-ai</a>
           </div>
         </div>
-         <div class="contact-detail">   
-        </div>
+
         <div class="contact-detail">
           <div class="contact-icon">
-            <img src="images/maps.png" alt="Location Icon" style="width: 25px;height:22px;">
+            <img src="images/maps.png" alt="" style="width:25px;height:22px;">
           </div>
           <div>
             <div class="contact-detail-label">Location</div>
-            <div class="contact-detail-val">UJJAIN/,India</div>
+            <div class="contact-detail-val">Ujjain, India · Open to relocation and remote</div>
           </div>
         </div>
       </div>
-      
-      
-      
+
       <form class="contact-form" onsubmit="handleFormSubmit(event)">
         <div class="form-group">
-          <label class="form-label">Name</label>
-          <input type="text" class="form-input" placeholder="Your name" required />
+          <label class="form-label" for="cf-name">Name</label>
+          <input id="cf-name" type="text" class="form-input" placeholder="Your name" autocomplete="name" required />
         </div>
         <div class="form-group">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-input" placeholder="john@example.com" required />
+          <label class="form-label" for="cf-email">Email</label>
+          <input id="cf-email" type="email" class="form-input" placeholder="you@company.com" autocomplete="email" required />
         </div>
         <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Your message..." required></textarea>
+          <label class="form-label" for="cf-message">Message</label>
+          <textarea id="cf-message" class="form-textarea" placeholder="Your message..." required></textarea>
         </div>
-        <button type="submit" class="btn solid" style="width:fit-content">Send Message</button>
-        <div id="formMsg" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent);display:none;margin-top:0.5rem;">Message sent! I'll be in touch soon.</div>
+        <button type="submit" class="btn solid" style="width:fit-content">Send message</button>
+        <div id="formMsg" role="status" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent);display:none;margin-top:0.5rem;">Your message is ready in a new Gmail tab. Hit send there.</div>
       </form>
     </div>
   </section>
+
   <footer>
-    <span>© VANSH 2026</span>
+    <span>© 2026 Vansh Rana</span>
     <div class="footer-links">
-      <a href="#contact">Contact</a>
+      <a href="#home" class="nav-logo"><img src="images/web.png" alt="Vansh Rana" height="32" /></a>
     </div>
   </footer>
+
   <!-- Demo Modal -->
   <div class="demo-modal-overlay" id="demoModal">
     <button class="demo-modal-close" onclick="closeDemoModal()" aria-label="Close demo">&times;</button>
-    <div class="demo-modal">
+    <div class="demo-modal" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
       <h3 class="demo-modal-title" id="demoModalTitle">Project Demo</h3>
       <div class="demo-modal-frame">
-        <video id="demoVideo" controls playsinline>
-          Your browser does not support the video tag.
-        </video>
+        <video id="demoVideo" controls playsinline></video>
       </div>
-      <a id="demoSourceLink" href="#" target="_blank" class="demo-source-btn">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
+      <a id="demoSourceLink" href="https://github.com/RANAV2004" target="_blank" rel="noopener" class="demo-source-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>
         VIEW SOURCE CODE →
       </a>
     </div>
